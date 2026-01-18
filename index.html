@@ -47,9 +47,10 @@
     .slide-header h1 { font-size: 28px; font-weight: 800; margin-bottom: 8px; }
     .slide-header p { opacity: 0.9; font-size: 15px; }
     .slide-content {
-      padding: 40px 32px;
+      padding: 32px 28px;
       flex: 1;
       overflow-y: auto;
+      max-height: calc(100vh - 200px);
     }
     .progress-bar {
       position: fixed;
@@ -109,16 +110,18 @@
       z-index: 1000;
     }
     .arabic-text {
-      font-size: 24px;
-      line-height: 1.9;
+      font-size: 20px;
+      line-height: 1.8;
       text-align: right;
       direction: rtl;
       color: #1f2937;
-      margin: 16px 0;
-      padding: 20px;
+      margin: 12px 0;
+      padding: 16px;
       background: linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 100%);
       border-radius: 16px;
       border-right: 5px solid #667eea;
+      word-wrap: break-word;
+      overflow-wrap: break-word;
     }
     .box {
       background: #f9fafb;
@@ -245,7 +248,7 @@
       text-shadow: 0 2px 4px rgba(0,0,0,0.3);
     }
     @media (max-width: 768px) {
-      .arabic-text { font-size: 20px; }
+      .arabic-text { font-size: 16px; line-height: 1.7; padding: 12px; margin: 10px 0; }
       .controls { bottom: 20px; }
       .btn { padding: 12px 20px; font-size: 14px; }
       .hint { bottom: 70px; font-size: 12px; }
@@ -321,6 +324,7 @@
 
       <div class="box">
         <h2>Qui sont les gens de la caverne ?</h2>
+        <p style="font-weight: 600;">Nah da nga fokni wa Ashaboul kahf ak inscription bi nekou gnou gnou yémou si sougnou ayat yi</p>
       </div>
 
       <div class="box">
