@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="fr">
-<head>
-  <meta charset="UTF-8" />
+<!-- saved from url=(0125)file:///C:/Users/Fama/AppData/Local/Temp/MicrosoftEdgeDownloads/05b1c1c1-ddaa-4223-81c2-7e449647273c/sourate_kahf_slides.html -->
+<html lang="fr"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
   <title>Sourate Al-Kahf — Cours (Ayat 9 à 13)</title>
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="viewport" content="width=device-width,initial-scale=1">
   <style>
     * { box-sizing: border-box; margin: 0; padding: 0; }
     body {
@@ -26,7 +26,8 @@
       box-shadow: 0 20px 60px rgba(0,0,0,0.3);
       max-width: 1100px;
       width: 100%;
-      min-height: 650px;
+      min-height: 600px;
+      max-height: 90vh;
       display: none;
       flex-direction: column;
       opacity: 0;
@@ -40,17 +41,17 @@
     }
     .slide-header {
       background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-      padding: 24px 32px;
+      padding: 16px 24px;
       color: white;
       border-radius: 24px 24px 0 0;
     }
-    .slide-header h1 { font-size: 28px; font-weight: 800; margin-bottom: 8px; }
-    .slide-header p { opacity: 0.9; font-size: 15px; }
+    .slide-header h1 { font-size: 22px; font-weight: 800; margin-bottom: 4px; }
+    .slide-header p { opacity: 0.9; font-size: 13px; }
     .slide-content {
-      padding: 32px 28px;
+      padding: 20px 24px;
       flex: 1;
       overflow-y: auto;
-      max-height: calc(100vh - 200px);
+      max-height: calc(100vh - 250px);
     }
     .progress-bar {
       position: fixed;
@@ -110,53 +111,111 @@
       z-index: 1000;
     }
     .arabic-text {
-      font-size: 20px;
-      line-height: 1.8;
+      font-size: 17px;
+      line-height: 1.6;
       text-align: right;
       direction: rtl;
       color: #1f2937;
-      margin: 12px 0;
-      padding: 16px;
+      margin: 8px 0;
+      padding: 12px;
       background: linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 100%);
-      border-radius: 16px;
+      border-radius: 12px;
       border-right: 5px solid #667eea;
       word-wrap: break-word;
       overflow-wrap: break-word;
     }
     .box {
       background: #f9fafb;
-      padding: 20px;
-      border-radius: 12px;
+      padding: 14px;
+      border-radius: 10px;
       border-left: 4px solid #10b981;
-      margin: 16px 0;
+      margin: 10px 0;
     }
     .box h2 {
-      font-size: 18px;
+      font-size: 15px;
       color: #667eea;
-      margin-bottom: 12px;
+      margin-bottom: 8px;
       font-weight: 700;
     }
-    .box p {
-      font-size: 16px;
-      line-height: 1.7;
+    .box p, .box ul, .box li {
+      font-size: 14px;
+      line-height: 1.5;
       color: #374151;
-      margin: 8px 0;
-      white-space: pre-wrap;
+      margin: 4px 0;
+      white-space: pre-line;
+    }
+    .box ul {
+      list-style: none;
+      padding-left: 16px;
+    }
+    .box li {
+      margin: 4px 0;
+    }
+    .box li::before {
+      content: "• ";
+      color: #10b981;
+      font-weight: bold;
+      margin-right: 6px;
     }
     .highlight-box {
       background: linear-gradient(135deg, #fef3c7 0%, #fde68a 100%);
-      padding: 16px;
-      border-radius: 12px;
-      margin: 16px 0;
+      padding: 12px;
+      border-radius: 10px;
+      margin: 10px 0;
       border-left: 4px solid #f59e0b;
-      white-space: pre-wrap;
     }
     .highlight-box p {
       color: #78350f;
-      font-size: 15px;
-      line-height: 1.7;
-      margin: 4px 0;
-      white-space: pre-wrap;
+      font-size: 14px;
+      line-height: 1.5;
+      margin: 3px 0;
+      white-space: pre-line;
+    }
+    .comparison-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 10px 0;
+      background: white;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+    .comparison-table th {
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      color: white;
+      padding: 12px;
+      text-align: left;
+      font-weight: 700;
+      font-size: 14px;
+    }
+    .comparison-table td {
+      padding: 12px;
+      border-bottom: 1px solid #e5e7eb;
+      vertical-align: top;
+    }
+    .comparison-table td ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+    .comparison-table td li {
+      margin: 5px 0;
+      padding-left: 16px;
+      position: relative;
+      line-height: 1.4;
+      font-size: 13px;
+    }
+    .comparison-table td li::before {
+      content: "•";
+      position: absolute;
+      left: 0;
+      color: #667eea;
+      font-weight: bold;
+    }
+    .separator {
+      height: 2px;
+      background: linear-gradient(90deg, transparent, #10b981, transparent);
+      margin: 12px 0;
     }
     .fullscreen-btn {
       position: fixed;
@@ -189,34 +248,58 @@
       .controls { bottom: 20px; }
       .btn { padding: 12px 20px; font-size: 14px; }
       .hint { bottom: 70px; font-size: 12px; }
+      .comparison-table { font-size: 14px; }
+      .comparison-table th, .comparison-table td { padding: 12px; }
     }
   </style>
 </head>
 <body>
 
 <div class="progress-bar">
-  <div class="progress-fill" id="progressBar"></div>
+  <div class="progress-fill" id="progressBar" style="width: 87.5%;"></div>
 </div>
 
-<div class="slide-number" id="slideNumber"></div>
+<div class="slide-number" id="slideNumber">7 / 8</div>
 
 <button class="fullscreen-btn" onclick="toggleFullscreen()" title="Mode plein écran">⛶</button>
 
 <div class="container">
 
+  <!-- SLIDE 0 - COUVERTURE -->
+  <div class="slide" style="justify-content: center; align-items: center; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); min-height: 90vh;">
+    <div style="text-align: center; color: white; padding: 40px;">
+      <div style="font-size: 48px; font-weight: 900; margin-bottom: 24px; text-shadow: 0 4px 12px rgba(0,0,0,0.3);">
+        سورة الكهف
+      </div>
+      <div style="font-size: 32px; font-weight: 800; margin-bottom: 16px;">
+        2- Cours القرءان
+      </div>
+      <div style="font-size: 24px; font-weight: 600; opacity: 0.95; margin-bottom: 32px;">
+        Sourate Al-Kahf
+      </div>
+      <div style="height: 3px; width: 200px; background: white; margin: 32px auto; opacity: 0.7;"></div>
+      <div style="font-size: 20px; font-weight: 500; opacity: 0.9; margin-top: 24px;">
+        Ayat 9 vers Ayat 13
+      </div>
+      <div style="font-size: 16px; opacity: 0.8; margin-top: 16px;">
+        Analyse et Réflexions
+      </div>
+    </div>
+  </div>
+
   <!-- SLIDE 1 -->
-  <div class="slide active">
+  <div class="slide">
     <div class="slide-header">
       <h1>2- Cours القرءان: سورة الكهف</h1>
       <p>Ayat 9 vers ayat 13. Surat Al Kahf.</p>
     </div>
     <div class="slide-content">
-      <div class="arabic-text">أَمْ حَسِبْتَ أَنَّ أَصْحَابَ الْكَهْفِ وَالرَّقِيمِ كَانُوا مِنْ آيَاتِنَا عَجَبًا</div>
-      <div class="arabic-text">إِذْ أَوَى الْفِتْيَةُ إِلَى الْكَهْفِ فَقَالُوا رَبَّنَا آتِنَا مِن لَّدُنكَ رَحْمَةً وَهَيِّئْ لَنَا مِنْ أَمْرِنَا رَشَدًا</div>
+      <div class="arabic-text">أَمْ حَسِبْتَ أَنَّ أَصْحَابَ الْكَهْفِ وَالرَّقِيمِ كَانُوا مِنْ آيَاتِنَا عَجَبًا</div>
+      <div class="arabic-text">إِذْ أَوَى الْفِتْيَةُ إِلَى الْكَهْفِ فَقَالُوا رَبَّنَا آتِنَا مِن لَّدُنكَ رَحْمَةً وَهَيِّئْ لَنَا مِنْ أَمْرِنَا رَشَدًا</div>
       <div class="arabic-text">فَضَرَبْنَا عَلَى آذَانِهِمْ فِي الْكَهْفِ سِنِينَ عَدَدًا</div>
-      <div class="arabic-text">ثُمَّ بَعَثْنَاهُمْ لِنَعْلَمَ أَيُّ الْحِزْبَيْنِ أَحْصَى لِمَا لَبِثُوا أَمَدًا</div>
-      <div class="arabic-text">نَّحْنُ نَقُصُّ عَلَيْكَ نَبَأَهُم بِالْحَقِّ إِنَّهُمْ فِتْيَةٌ آمَنُوا بِرَبِّهِمْ وَزِدْنَاهُمْ هُدًى</div>
-      <div class="arabic-text">وَرَبَطْنَا عَلَى قُلُوبِهِمْ إِذْ قَامُوا فَقَالُوا رَبُّنَا رَبُّ السَّمَاوَاتِ وَالْأَرْضِ لَن نَّدْعُوَ مِن دُونِهِ إِلَهًا لَّقَدْ قُلْنَا إِذًا شَطَطًا</div>
+      <div class="arabic-text">ثُمَّ بَعَثْنَاهُمْ لِنَعْلَمَ أَيُّ الْحِزْبَيْنِ أَحْصَى لِمَا لَبِثُوا أَمَدًا</div>
+      <div class="arabic-text">نَّحْنُ نَقُصُّ عَلَيْكَ نَبَأَهُم بِالْحَقِّ إِنَّهُمْ فِتْيَةٌ آمَنُوا بِرَبِّهِمْ وَزِدْنَاهُمْ هُدًى</div>
+      <div class="arabic-text">وَرَبَطْنَا عَلَى قُلُوبِهِمْ إِذْ قَامُوا فَقَالُوا رَبُّنَا رَبُّ السَّمَاوَاتِ وَالْأَرْضِ لَن نَّدْعُوَ مِن دُونِهِ إِلَهًا لَّقَدْ قُلْنَا إِذًا شَطَطًا</div>
       <div class="box">
         <p>Ayat 9 vers ayat 13. Surat Al Kahf.</p>
       </div>
@@ -231,14 +314,17 @@
     </div>
     <div class="slide-content">
       <div class="box">
-        <p>Questions  :
+        <p><strong>Questions :</strong>
 Qui sont les gens de la caverne ? 
-La raison de leur sommeil ? ,
-Pourquoi l’absence de détails ?
-pas de noms précis 
-Pas de lieu spécifique 
-Pas de époque déterminé 
-Pas de nombre exact</p>
+La raison de leur sommeil ?
+
+<strong>Pourquoi l'absence de détails ?</strong></p>
+        <ul>
+          <li>Pas de noms précis</li>
+          <li>Pas de lieu spécifique</li>
+          <li>Pas d'époque déterminé</li>
+          <li>Pas de nombre exact</li>
+        </ul>
       </div>
     </div>
   </div>
@@ -247,17 +333,18 @@ Pas de nombre exact</p>
   <div class="slide">
     <div class="slide-header">
       <h1>Message universel</h1>
-      <p>Slide suivant</p>
+      <p>Universalité de l'histoire</p>
     </div>
     <div class="slide-content">
       <div class="highlight-box">
-        <p>Cette universalité permet à l’histoire de s’appliquer à tous les peuples, en tout temps et en tout lieu. => Message universel.</p>
+        <p>Cette universalité permet à l'histoire de s'appliquer à tous les peuples, en tout temps et en tout lieu. ⇒ Message universel.</p>
       </div>
 
+      <div class="separator"></div>
+
       <div class="box">
-        <p>————————————————————
-Des jeunes forts dans leur foi , pas des faibles ou des personnes âgées
-————————————————————</p>
+        <p><strong>Des jeunes forts dans leur foi</strong>
+Pas des faibles ou des personnes âgées</p>
       </div>
     </div>
   </div>
@@ -270,13 +357,13 @@ Des jeunes forts dans leur foi , pas des faibles ou des personnes âgées
     </div>
     <div class="slide-content">
       <div class="box">
-        <p>Ibn Arabi 
-Une lecture symbolique et spirituelle 
-kahf > le corps matériel qui abrite l’être humain 
-Le sommeil > l’oubli du monde spirituel, l’absorption pour le corps
-Les Jeunes : des âmes  en quête de perfection et de connexion avec le Seigneur 
-La Miséricorde : le réveil de l’oublie 
-————————————————————</p>
+        <h2>Ibn Arabi — Lecture symbolique et spirituelle</h2>
+        <ul>
+          <li><strong>Kahf &gt;</strong> le corps matériel qui abrite l'être humain</li>
+          <li><strong>Le sommeil &gt;</strong> l'oubli du monde spirituel, l'absorption pour le corps</li>
+          <li><strong>Les Jeunes :</strong> des âmes en quête de perfection et de connexion avec le Seigneur</li>
+          <li><strong>La Miséricorde :</strong> le réveil de l'oubli</li>
+        </ul>
       </div>
     </div>
   </div>
@@ -285,56 +372,76 @@ La Miséricorde : le réveil de l’oublie
   <div class="slide">
     <div class="slide-header">
       <h1>Lien avec les Moustarchids</h1>
-      <p>fî’atoune de Mame</p>
+      <p>Fî'atoune de Mame</p>
     </div>
     <div class="slide-content">
       <div class="box">
-        <p>Lien avec les Moustarchids : fî’atoune de Mame
-Analyse des symboles ( poème)
-Force de détermination face à la résistance 
-Guide présent et future génération 
-Haute aspiration pour affronter le matérialisme</p>
+        <h2>Lien avec les Moustarchids : fî'atoune de Mame</h2>
+        <p><strong>Analyse des symboles (poème) :</strong></p>
+        <ul>
+          <li>Force de détermination face à la résistance</li>
+          <li>Guide présent et future génération</li>
+          <li>Haute aspiration pour affronter le matérialisme</li>
+        </ul>
       </div>
 
       <div class="box">
-        <p>Comparaison entre caverne VS poème (fî atoune)
-
-Même structure : foi , structure, résistance spirituelle 
-Les compagnons de cette époque 
-Les intellectuels
-Négation au niveau de révélation 
-Négation au niveau de la conscience spirituelle 
-Tentative d’éteindre la lumière divine 
-
-Le poème redessine l’histoire ( le moustarchid actuel)
-Résistance aux courants de déviation 
-Appel à la fermeté dans la foi
- Défense de la ….
-————————————————————</p>
+        <h2>Comparaison entre caverne VS poème (fî atoune)</h2>
+        <p><strong>Même structure :</strong> foi, structure, résistance spirituelle</p>
+        <p><strong>Les compagnons de cette époque :</strong></p>
+        <ul>
+          <li>Les intellectuels</li>
+          <li>Négation au niveau de révélation</li>
+          <li>Négation au niveau de la conscience spirituelle</li>
+          <li>Tentative d'éteindre la lumière divine</li>
+        </ul>
+        
+        <p><strong>Le poème redessine l'histoire (le moustarchid actuel) :</strong></p>
+        <ul>
+          <li>Résistance aux courants de déviation</li>
+          <li>Appel à la fermeté dans la foi</li>
+          <li>Défense de la...</li>
+        </ul>
       </div>
     </div>
   </div>
 
   <!-- SLIDE 6 -->
-  <div class="slide">
+  <div class="slide active">
     <div class="slide-header">
       <h1>Ashaboul Kahf / Moustarchidine</h1>
-      <p>Comparaison (liste)</p>
+      <p>Comparaison</p>
     </div>
     <div class="slide-content">
-      <div class="box">
-        <p>Ashaboul Kahf
-Moustarchidine
-époque polythéisme
-Combat , refus du shirk
-Fuite tyrans
-Jeune croyants fort
-époque matérialiste 
-Rareté des références spirituelle 
-Résistance intellectuelle
-Famille déterminée 
-Domination des idéologies</p>
-      </div>
+      <table class="comparison-table">
+        <thead>
+          <tr>
+            <th>Ashaboul Kahf</th>
+            <th>Moustarchidine</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+              <ul>
+                <li>Époque polythéisme</li>
+                <li>Combat, refus du shirk</li>
+                <li>Fuite des tyrans</li>
+                <li>Jeunes croyants forts</li>
+              </ul>
+            </td>
+            <td>
+              <ul>
+                <li>Époque matérialiste</li>
+                <li>Rareté des références spirituelles</li>
+                <li>Résistance intellectuelle</li>
+                <li>Famille déterminée</li>
+                <li>Domination des idéologies</li>
+              </ul>
+            </td>
+          </tr>
+        </tbody>
+      </table>
     </div>
   </div>
 
@@ -342,12 +449,13 @@ Domination des idéologies</p>
   <div class="slide">
     <div class="slide-header">
       <h1>Contextualisation</h1>
-      <p>Relier l’histoire au mouvement</p>
+      <p>Relier l'histoire au mouvement</p>
     </div>
     <div class="slide-content">
       <div class="highlight-box">
-        <p>Contextualiser l’histoire par rapport au mouvement => fane laniou Capitaine di khaare. 
--Serigne Moustapha bane époque la nieuw : engagement de Serigne Moustapha, dahira bi fane la diougué, lane la tabakh ba aksi fii,</p>
+        <p><strong>Contextualiser l'histoire par rapport au mouvement</strong>
+⇒ Fane laniou Capitaine di khaare.</p>
+        <p>Serigne Moustapha bane époque la nieuw : engagement de Serigne Moustapha, dahira bi fane la diougué, lane la tabakh ba aksi fii.</p>
       </div>
     </div>
   </div>
@@ -402,5 +510,5 @@ document.addEventListener('keydown', (e) => {
 updateSlide();
 </script>
 
-</body>
-</html>
+
+</body></html>
